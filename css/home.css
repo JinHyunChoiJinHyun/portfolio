@@ -1,0 +1,148 @@
+@charset "utf-8";
+:root{
+   /* color */
+   --white:#FCF9EB;
+   --orange:#FF5938;
+   --yellow:#FFE549;
+   --green:#00664E;
+   --blue:#3273DA;
+   --black:#1F1C09;
+
+   /* font */
+   --pre-thin:'Pretendard-Thin';
+   --pre-regular:'Pretendard-Regular';
+   --pre-semibold:'Pretendard-SemiBold';
+   --pre-bold:'Pretendard-Bold';
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+.visual{
+    position: relative;
+}
+.visual-container{
+    max-width: 1700px;
+    width: 100%;
+    padding-top: 10%;
+    padding-left: 8%;
+    font-size: 15px;
+}
+.visual .text{
+}
+.visual h2{
+    font-family: 'eastman-roman';
+    color: var(--orange);
+    font-size: 5em;
+    line-height: 1.2;
+    padding-bottom: 3%;
+    white-space: nowrap;
+}
+.visual .m-banner{
+    display: none;
+    line-height: 1.5;
+}
+.visual h4{
+    font-family: var(--pre-regular);
+    color: var(--green);
+    font-size: 2.5em;
+    line-height: 1.7;
+}
+.visual h4 i{
+    background-color: var(--yellow);
+    font-style: normal;
+    font-weight: 900;
+    padding: 10px 5px;
+}
+.visual .img-box{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 18%;
+    left: 38%;
+}
+.visual .img-box a{
+    
+}
+.visual .img-box a img{
+    display: block;
+    width: 100%;
+}
+
+/* responsive */
+@media screen and (max-width: 1700px){
+    .visual-container{
+        width: 95%;
+    }
+    .visual .img-box{
+        top: 15%;
+        left: 45%;
+    }
+}
+@media screen and (max-width: 1199px)  {
+    .visual-container{
+        font-size: 13px;
+    }
+    .visual-container{
+        padding-top: 15%;
+    } 
+    .visual .img-box{
+        width: 200px;
+        height: 200px;
+        top: 20%;
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .visual-container{
+        font-size: 12px;
+    }
+    .visual .img-box{
+        top: 40%;
+        left: 50%;
+    }
+    .visual h4{
+        padding-top: 3%;
+    }
+    .visual h2{
+        display: none;
+    }
+    .visual .m-banner{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .visual-container{
+        font-size: 10px;
+    }
+    .visual .m-banner{
+        padding-top: 30px;
+    }
+    .visual .img-box{
+        width: 150px;
+        height: 150px;
+        top: 44%;
+        left: 65%;
+    }
+}
+@media screen and (max-width: 452px){
+    .visual-container{
+        font-size: 8px;
+    }
+    .visual .img-box{
+        width: 100px;
+        height: 100px;
+        top: 50%;
+    }
+}
+@media screen and (max-width: 360px){
+    .visual-container{
+        font-size: 7px;
+    }
+    .visual .img-box{
+        top: 60%;
+    }
+}
+
